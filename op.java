@@ -9,32 +9,33 @@ public class op{ //When we have a public class then the class name should be sam
     static int n = 2; //Here this will behave an global variable that is it could be exceed from all the function which is present in that class
     public static void main(String[] args) {  
 
-        System.out.println("Hi from java from program 1");
-        hi();  // All functions written in the class must be called in this main function only and no where else
-
+        System.out.println("Hi from java from main function");
+        hi0();  // All functions written in the class must be called in this main function only and no where else
+        hi1();
+        hi2();
     }
 
-    public static void hi() {
+    public static void hi0() {
 
-        System.out.println("hello ");
+        System.out.println("Hello from hi()");
         System.out.println(n);
         
     }
 
     
-    public static void hhoisdfh() {//all, on running once only memory is been assiigned
+    public static void hi1() {//all, on running once only memory is been assiigned
 
-        System.out.println("hello ");
+        System.out.println("Hello from public hi1()");
         System.out.println(n);
         
     }
 
-    // static void hhoisdfh() {//private that is having existance  in this class only
+    static void hi2() {//private that is having existance  in this class only
 
-    //     System.out.println("hello ");
-    //     System.out.println(n);
+        System.out.println("Hello from static hi2()");
+        System.out.println(n);
         
-    // }
+    }
 
 }
 
