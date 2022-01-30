@@ -1,10 +1,12 @@
 //To run this file in terminal or gitbash just write : java <-filename->.java
 
+//An IDE consist of both editor and compiler
+//An jdk(Java development kit) is been used to to compile and run a java program
 
 import java.util.*; //This will have all the opertions like that of print ,etc, etc
 import java.io.*;//This is rquired for input output operation
 
-public class op{ //When we have a public class then the class name should be same as the file name
+public class op{ //When we have a public class then the class name should be same as the file name,every file should have an public class that to only one public class but it could have multiple classes other than public class .
 
     static int n = 2; //Here this will behave an global variable that is it could be exceed from all the function which is present in that class
     public static void main(String[] args) {  
@@ -58,3 +60,19 @@ public class op{ //When we have a public class then the class name should be sam
 //     }
 
 // }
+
+
+//		try {
+
+//			System.out.println(2/0);
+
+//		} catch(ArrayIndexOutOfBoundsException e) {
+
+//			System.out.println("Error aaya tha");
+//			System.out.println(e.getLocalizedMessage());
+
+//		} catch(ArithmeticException e) {
+//			
+//		}catch(Exception e){
+
+//      }
