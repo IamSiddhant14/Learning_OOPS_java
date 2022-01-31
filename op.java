@@ -21,7 +21,8 @@ public class op{ //When we have a public class then the class name should be sam
         hi2();
     }
 
-    public static void hi0() {
+    public static void hi0() {// Here all functions will be of type static because we could only access them by our main function if they are of type static
+        //That is an staic function could only called by an static function or an static class
 
         System.out.println("Hello from hi()");
         System.out.println(n);
@@ -90,3 +91,45 @@ public class op{ //When we have a public class then the class name should be sam
 //		}catch(Exception e){
 
 //      }
+
+
+
+
+//A class is an user defined data type , where each object created from the class is an instance of that class,
+
+// public static class LinkedList {
+
+//     Node head; -- This three of them are data members
+//     Node tail;
+//     int size;
+//     void addLast(int val) { -- This is an memeber function
+
+//     }
+
+// }
+
+
+
+//Array shallow copy and deep copy
+
+// int [] a = {1,2,3,4,5,6};
+// int [] b = new int [a.length];
+
+
+// Here we have used this "new" keyword which help us in creating an new copy ,but if would not have used new in that case a shallow copy would have been created , because of which any change made on array "b" will refelect in array "a " as well
+
+// for (int i = 0; a.length; i++){
+//     b[i] = a[i];
+// }
+          
+
+
+
+
+
+
+
+
+
+
+
