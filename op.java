@@ -123,8 +123,11 @@ public class op{ //When we have a public class then the class name should be sam
 // }
           
 
+//Scanner scn = new Scanner (System.in);
+// Here from the user defined-data-type(class) "scanner" we have created an object as "scn" that is, "scn" is an instance of class "scanner"
 
 
+// object bina bina call kar skte hai ek method if it is type static
 
 
 
