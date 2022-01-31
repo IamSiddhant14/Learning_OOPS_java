@@ -130,6 +130,9 @@ public class op{ //When we have a public class then the class name should be sam
 // object bina bina call kar skte hai ek method if it is type static
 
 
+// when the function is of type private instead of being public then that function could be called only within the class and not outside of it
+
+
 
 
 
