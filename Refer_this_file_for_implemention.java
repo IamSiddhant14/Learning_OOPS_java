@@ -47,6 +47,7 @@ public class Refer_this_file_for_implemention{
         op.memberFunc();
         System.out.println(op.n);
         System.out.println(op.b);
+        System.out.println(op.a);
         // System.out.println(c);Cannot make a static reference to the non-static field c
         // System.out.println(AnotherfunctionONE());Cannot make a static reference to the non-static field c
         System.out.println(ca);
