@@ -11,15 +11,26 @@ import java.util.*; //This will have all the opertions like that of print ,etc, 
 import java.io.*;//This is rquired for input output operation
 
 public class op{ //When we have a public class then the class name should be same as the file name,every file should have an public class that to only one public class but it could have multiple classes other than public class .
+   public static class abc{
 
-    static int n = 2; //Here this will behave as an local variable , that is it could be exceed from all the function which is present in that class
+        void ab(){ // Private by default
+        System.out.println("Hello aditya");
+       }
+
+   }
+   public static int n = 69; //Here this will behave as an local variable , that is it could be exceed from all the function which is present in that class
     public static void main(String[] args) {  
 
         System.out.println("Hi from java from main function");
         hi0();  // All functions written in the class must be called in this main function only and no where else
         hi1();
         hi2();
+
+        abc obij = new abc();
+        obij.ab();
+        System.out.println(n);
     }
+    
 
     public static void hi0() {// Here all functions will be of type static because we could only access them by our main function if they are of type static
         //That is an staic function could only called by an static function or an static class
