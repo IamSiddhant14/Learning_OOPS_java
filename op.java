@@ -1,4 +1,4 @@
-//To run this file in terminal or gitbash just write : java <-filename->.java
+//To run this file in terminal or gitbash just write : javac <-filename->.java   (This will only work when the file name and the public class name is same )
 
 //An IDE consist of both editor and compiler
 //An jdk(Java development kit) is been used to to compile and run a java program
@@ -12,7 +12,7 @@ import java.io.*;//This is rquired for input output operation
 
 public class op{ //When we have a public class then the class name should be same as the file name,every file should have an public class that to only one public class but it could have multiple classes other than public class .
 
-    static int n = 2; //Here this will behave an global variable that is it could be exceed from all the function which is present in that class
+    static int n = 2; //Here this will behave as an local variable , that is it could be exceed from all the function which is present in that class
     public static void main(String[] args) {  
 
         System.out.println("Hi from java from main function");
@@ -37,7 +37,7 @@ public class op{ //When we have a public class then the class name should be sam
         
     }
 
-    static void hi2() {//private that is having existance  in this class only
+    static void hi2() {//private that is having existance in this class only
 
         System.out.println("Hello from static hi2()");
         System.out.println(n);
@@ -57,7 +57,7 @@ public class op{ //When we have a public class then the class name should be sam
 //For compiling - javac <-- filename.java --/>
 //For running - java <-- class Name --/>
 
-// class o{//If we dont write "public" in front of class name then we could create name of class as per our needs and not same as the file name as before
+// class o{//If we dont write "public" in front of class name then we could create name of class as per our needs and not same as the file name as before AND also this will create a new file named as <--className.class-->
 
 //     public static int n = 2;
 //     public static void main(String[] args) {
@@ -88,14 +88,29 @@ public class op{ //When we have a public class then the class name should be sam
 
 //		} catch(ArithmeticException e) {
 //			
-//		}catch(Exception e){
+//		} catch(Exception e){
 
 //      }
 
 
-
-
 //A class is an user defined data type , where each object created from the class is an instance of that class,
+
+
+//Syantx to make a class,
+
+//public static class <--classname-->{
+
+        // Data memebers
+        //   DATATYPE  NAME
+
+
+
+        //Members Functions
+        //   ReturnType FunctionName{
+
+        // }
+
+//}
 
 // public static class LinkedList {
 
@@ -116,7 +131,7 @@ public class op{ //When we have a public class then the class name should be sam
 // int [] b = new int [a.length];
 
 
-// Here we have used this "new" keyword which help us in creating an new copy ,but if would not have used new in that case a shallow copy would have been created , because of which any change made on array "b" will refelect in array "a " as well
+// Here we have used this "new" keyword which help us in creating an new copy ,but if we would have not used "new" keyword in that case a shallow copy would have been created , because of which any change made on array "b" will refelect in array "a " as well
 
 // for (int i = 0; a.length; i++){
 //     b[i] = a[i];
@@ -124,13 +139,13 @@ public class op{ //When we have a public class then the class name should be sam
           
 
 //Scanner scn = new Scanner (System.in);
-// Here from the user defined-data-type(class) "scanner" we have created an object as "scn" that is, "scn" is an instance of class "scanner"
+// Here it an user defined-data-type(class) "scanner" we have created an object as "scn" that is, "scn" is an instance of class "scanner"
 
 
 // object bina bina call kar skte hai ek method if it is type static
 
 
-// when the function is of type private instead of being public then that function could be called only within the class and not outside of it
+// when the function is of type private instead of being public then that function could be called only within the class and not outside of that class
 
 
 
