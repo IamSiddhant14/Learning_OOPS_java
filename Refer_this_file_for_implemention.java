@@ -1,7 +1,7 @@
 import java.util.*;
 import java.util.Scanner;
 
-public class siddhant{
+public class Refer_this_file_for_implemention{
 
     static String s = " Hello Siddhant ";
  
