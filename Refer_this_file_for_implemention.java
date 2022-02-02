@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class Refer_this_file_for_implemention{
 
     static String s = " Hello Siddhant ";
+    public static String d = " Hello Siddhant op "; //Now this function could also be inhereted by another class as well
  
     public static int S(){
         System.out.println("Hello");
