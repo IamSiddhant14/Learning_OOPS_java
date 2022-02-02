@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Refer_this_file_for_implemention{
 
     static String s = " Hello Siddhant ";
-    public static String d = " Hello Siddhant op "; //Now this function could also be inhereted by another class as well
+    public static String d = " Hello Siddhant op "; //Now this variable could also be inhereted by another class as well which is out side of this Public class 
  
     public static int S(){
         System.out.println("Hello");
@@ -28,7 +28,7 @@ public class Refer_this_file_for_implemention{
         int b ;
         String a;
 
-        String memberFunc(){
+        String memberFunc(){//private by default , that is it could be accessed by all the data member & member function of the public class(Refer_this_file_for_implemention) and not outside of it
             System.out.println("Hello worldddddddddddd");
 
             return "op Siddhant OP";
