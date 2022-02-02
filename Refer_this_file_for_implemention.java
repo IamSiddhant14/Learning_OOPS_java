@@ -11,6 +11,18 @@ public class Refer_this_file_for_implemention{
         return 6;
     }
 
+    int c = 6;//This is an data member of the public class 'Refer_this_file_for_implemention' we Cannot make a static reference to the non-static field c
+    static int ca = 6;//This will work fine
+
+    String AnotherfunctionONE(){
+        System.out.println("This is an member function (private) of the public class 'Refer_this_file_for_implemention' and could be called by the objects of the class but here Cannot make a static reference to the non-static field c ");
+        return " from Anotherfunction ";
+    }
+    static String AnotherfunctionTWO(){
+        System.out.println(" This will work fine ");
+        return "AnotherfunctionTWO";
+    }
+
     public static class Classop{
         int n =  69 ;
         int b ;
@@ -34,6 +46,10 @@ public class Refer_this_file_for_implemention{
         op.memberFunc();
         System.out.println(op.n);
         System.out.println(op.b);
+        // System.out.println(c);Cannot make a static reference to the non-static field c
+        // System.out.println(AnotherfunctionONE());Cannot make a static reference to the non-static field c
+        System.out.println(ca);
+        System.out.println(AnotherfunctionTWO());
 
     }
 
