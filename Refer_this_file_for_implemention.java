@@ -19,14 +19,14 @@ public class Refer_this_file_for_implemention{
         String memberFunc(){
             System.out.println("Hello worldddddddddddd");
 
-            return " CANADA OP";
+            return "op Siddhant OP";
         }
     }
 
 
     public static void main(String [] args ){
 
-        //All the function/class/ variables should of type static in order to call that function or class or variables from the main function 
+        //All the function/class/ variables should of type static in order to call that function or class or variables from this main function 
 
         System.out.println(s);
         System.out.println(S());
