@@ -24,13 +24,42 @@ public class Refer_this_file_for_implemention{
         return "AnotherfunctionTWO";
     }
 
-    public static class Classop{
+    public static String AnotherfunctionTHREE(){
+        System.out.println(" This will work fine from AnotherfunctionTHREE");
+        return "AnotherfunctionTWO";
+    }
+
+    public static class Classop{  
         int n =  69 ;
         int b ;
         String a;
 
         String memberFunc(){//private by default , that is it could be accessed by all the data member & member function of the public class(Refer_this_file_for_implemention) and not outside of it
-            System.out.println("Hello worldddddddddddd");
+            System.out.println("Hello from Classop");
+
+            return "op Siddhant OP";
+        }
+    }
+
+    static class ClassPO{// cannot be inheritaed by any other class other then that of the  "Refer_this_file_for_implemention"
+        int n =  69 ;
+        int b ;
+        String a;
+
+        String memberFunc(){//private by default , that is it could be accessed by all the data member & member function of the public class(Refer_this_file_for_implemention) and not outside of it
+            System.out.println("Hello from ClassPO");
+
+            return "op Siddhant OP";
+        }
+    }
+
+    class ClassPOOP{//Cannot be called by the "main" function as it is not of the type static
+        int n =  69 ;
+        int b ;
+        String a;
+
+        String memberFunc(){//private by default , that is it could be accessed by all the data member & member function of the public class(Refer_this_file_for_implemention) and not outside of it
+            System.out.println("Hello from ClassPOOP");
 
             return "op Siddhant OP";
         }
@@ -44,14 +73,17 @@ public class Refer_this_file_for_implemention{
         System.out.println(s);
         System.out.println(S());
         Classop op = new Classop();
+        ClassPO PO = new ClassPO();
         op.memberFunc();
+        PO.memberFunc();
         System.out.println(op.n);
-        System.out.println(op.b);
+        System.out.println(op.b = 690990909 );
         System.out.println(op.a);
         // System.out.println(c);Cannot make a static reference to the non-static field c
         // System.out.println(AnotherfunctionONE());Cannot make a static reference to the non-static field c
         System.out.println(ca);
         System.out.println(AnotherfunctionTWO());
+        System.out.println(AnotherfunctionTHREE());
 
     }
 
