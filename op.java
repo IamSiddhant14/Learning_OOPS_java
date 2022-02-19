@@ -1,4 +1,4 @@
-//To run this file in terminal or gitbash just write : javac <-filename->.java   (This will only work when the file name and the public class name is same )
+//To run this file in Vscode then in the terminal or gitbash just write : javac <-filename->.java   (This will only work when the file name and the public class name is same )
 
 //An IDE consist of both editor and compiler
 //An jdk(Java development kit) is been used to to compile and run a java program
@@ -105,7 +105,6 @@ public class op{ //When we have a public class then the class name should be sam
 
 
 //A class is an user defined data type , where each object created from the class is an instance of that class,
-
 
 //Syantx to make a class,
 
