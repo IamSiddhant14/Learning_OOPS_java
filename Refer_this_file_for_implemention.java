@@ -58,7 +58,8 @@ public class Refer_this_file_for_implemention{
         int b ;
         String a;
 
-        String memberFunc(){//private by default , that is it could be accessed by all the data member & member function of the public class(Refer_this_file_for_implemention) and not outside of it
+        public String memberFunc(){
+            
             System.out.println("Hello from ClassPOOP");
 
             return "op Siddhant OP";
