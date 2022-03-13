@@ -6,6 +6,7 @@
 //If the file name and the class name are same
 
 //For compiling - javac <-- filename.java --/>
+//For running - java <-- fileName --/>
 
 import java.util.*; //This will have all the opertions like that of print ,etc, etc
 import java.io.*;//This is rquired for input output operation
