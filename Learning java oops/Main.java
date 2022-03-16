@@ -128,10 +128,10 @@ public class Main {
         // s1.name = kunal ; // Assianing it to another object is not allowed with final
         // keyword
 
-        A obj;
-        for (int i = 0; i < 1000000000; i++) {
-            obj = new A("Random name");
-        }
+        // A obj;
+        // for (int i = 0; i < 1000000000; i++) {
+        //     obj = new A("Random name");
+        // }
     }
 
 }
