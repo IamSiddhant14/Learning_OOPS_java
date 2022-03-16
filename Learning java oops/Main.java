@@ -85,9 +85,16 @@ System.out.println(s.roll);
 
 }
 
-//Final keyword help us in preventing our content getting modified, remember final variables need to be intialized at the time of creating it, final keyword is only applicable to the premitive data types only as in case of non premative data type we could not reassign it
+//Final keyword help us in preventing our content getting modified, remember final variables need to be intialized at the time of creating it, final keyword is only applicable to the premitive data types only as in case of non premative data type we could not reassign it although we could modifie it value
+
 final int INCREASE = 2; 
 //  INCREASE = 3;//This will result in an error
+
+// final Student s1 = new Student();
+// Student s2 = new student();
+// s1.name = "hi"; 
+// s1.name = "hello";// This is possible for non premitive data types to reassign values 
+// s1.name = kunal ; // Assianing it to another object is not allowed with final keyword 
 
 
 }
