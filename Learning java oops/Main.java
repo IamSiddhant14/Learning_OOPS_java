@@ -1,4 +1,5 @@
-// javac Main.java --> For Compiling   Here filename with extension is required)
+// javac Main.java --> For Compiling   Here filename with extension is required
+
 // java Main --> For Running    Here filename with extension is required)
 
 // To compile  and run it in one go without creating any  .class file we will do :
@@ -11,7 +12,7 @@
 public class Main {
 
     // 1.> For public classes filename and Class name should be same, in this file
-    // "Main.java"
+    // "Main.java" so class name will be Main
 
     // 2.> There could only be one public class but there could be other class which
     // are not public in nature
@@ -21,26 +22,56 @@ public class Main {
     // 4.> Here public signifience that this class could be accessed from any other
     // package any other class or any file as well
 
-    static class Student {
-        int roll = 3;
-        int grade;
+    static class Student{
+
+        int rollNo;
         String name;
+        boolean is;
+
+        //"this "refers to the object of the class student
+
+        Student(int rollNo , String name){ //constructor
+            this.rollNo =rollNo;  //Here "this" keyword refers to object created from class Student
+            this.name = name;
+            this.is = true;
+        }
+
+
+        public Student() {// Default constructor
+
+            // Calling one constructor from another constructor,constructor chaining
+          this(13 , "op singh");
+        }
+
+        Student(Student other){//Copy constructor
+          this.name = other.name;
+          this.rollNo = other.rollNo;
+          this.is = other.is;
+        }
+
+        void greeting(){//In void type things we don't write "println"
+            System.out.println("Hello My Name is "+ this.name);
+        }
+
+        void changeName(String s){
+            this.name = s;//we are changing the name of the object
+        }
     }
 
     static class A {
 
         // In java garabe collection happens automatically unlike other language like
-        // that of c++ but here we could instead tell what to do when object is
+        // that of c++, but here we could instead tell what to do when object is
         // destroyed this could be done with the help of distructors
 
-        // Here we have this finalize method in class A we could have them in diffrent
+        // Here we have this finalize method in class A we could have them in different
         // classes , any object from class A is been created then finalize will get
         // called
 
         final int num = 10;
         String name;
 
-        public A(String name) {
+       A(String name) {
             this.name = name;
         }
 
@@ -53,11 +84,14 @@ public class Main {
 
     }
 
-    public static void main(String[] args) {// Here this " String[] args "represent that it is an array of string named
-                                            // as args
-
+    public static void main(String[] args) {
+        
+        // Here this " String[] args "represent that it is an array of strings named as args
+            
         // 1.> Here this method "main" is also static in nature as we dont require to
+
         // create an object of the class "Main" in order to invoke the "main" method
+
         // thats why it is been made as public in nature
 
         // 1.1> Main obj = new Main();
@@ -81,7 +115,7 @@ public class Main {
         // "]"
 
         // Notes : Any data type which could not be broken into other data types are
-        // called premitive data type like( stavk mai he refrence variable banta hai) :
+        // called premitive data type like( stack mai he refrence variable banta hai) :
 
         // int rollos = 64;
         // char letter = 'r';
@@ -90,7 +124,7 @@ public class Main {
         // long largeInteger = 34567834567876543L;
         // boolean check = false;
 
-        // Wrapper classes : Stack mai reference variable banta hai or uska object heap
+        // Wrapper classes : Stack mai reference variable banta hai aur uska object heap
         // mai banta hai jis ko refernce variable point karta hai
 
         Integer rno = 13;
