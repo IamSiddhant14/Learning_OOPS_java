@@ -9,6 +9,9 @@
 
 // A class consist of a data member and member functions
 
+//A pure OOPS language is one in which every thing is in the form of classes and object like for example in case of  python, where as in case of c++ and java are primitive data type exist which are not object hence c++ and java are not pure oops language
+
+package lecture1;
 public class Main {
 
     // 1.> For public classes filename and Class name should be same, in this file
@@ -77,7 +80,6 @@ public class Main {
 
         @Override
         protected void finalize() throws Throwable {
-
             // super.finalize();
             System.out.println("Object is destroyed");
         }
@@ -114,6 +116,8 @@ public class Main {
         // Here this will go in the form of an array of type string"[ "3" , "Siddhant
         // "]"
 
+        //Stack k changes persist nahi karte hai per heap k changes persist karte hai 
+
         // Notes : Any data type which could not be broken into other data types are
         // called premitive data type like( stack mai he refrence variable banta hai) :
 
@@ -126,9 +130,17 @@ public class Main {
 
         // Wrapper classes : Stack mai reference variable banta hai aur uska object heap
         // mai banta hai jis ko refernce variable point karta hai
+        int var = 5;
+        //Here an var = 5 variable is been created which is storing 5 in it here this variable is created on the stack
 
-        Integer rno = 13;
-        Integer n = new Integer(13);
+        Integer rno = var;
+        
+        //Here a var objct is been created on the heap storing 5 in it and rno is the refrence variable for this object var in heap here this refrece variable rno is been created in the stack
+
+        Integer n = new Integer(5);
+        
+        //Here we are creating an object on the heap which is storing 5 in it,here this n is an reffrence variable which is pointing to an object in the heap,since its an object therefore it will contain varies default properties of the object as well
+        
 
         // FROM LEARNING INTELLIJ
 
@@ -166,6 +178,8 @@ public class Main {
         // for (int i = 0; i < 1000000000; i++) {
         //     obj = new A("Random name");
         // }
+
+        
     }
 
 }
