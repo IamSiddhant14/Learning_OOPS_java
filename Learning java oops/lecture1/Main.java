@@ -14,16 +14,13 @@
 package lecture1;
 public class Main {
 
-    // 1.> For public classes filename and Class name should be same, in this file
-    // "Main.java" so class name will be Main
+    // 1.> For "public classes" filename and Class name should be same, in this file "Main.java" so class name will be Main
 
-    // 2.> There could only be one public class but there could be other class which
-    // are not public in nature
+    // 2.> There could only be one public class but there could be other class which are not public in nature
 
     // 3.> Class name frist letter should be captial in nature( convention)
 
-    // 4.> Here public signifience that this class could be accessed from any other
-    // package any other class or any file as well
+    // 4.> Here public signifience that this class could be accessed from any other package any other class or any file as well
 
     static class Student{
 
@@ -31,7 +28,7 @@ public class Main {
         String name;
         boolean is;
 
-        //"this "refers to the object of the class student
+        //"this "refers to the object of the class student when created
 
         Student(int rollNo , String name){ //constructor
             this.rollNo =rollNo;  //Here "this" keyword refers to object created from class Student
@@ -39,7 +36,7 @@ public class Main {
             this.is = true;
         }
 
-
+ 
         public Student() {// Default constructor
 
             // Calling one constructor from another constructor,constructor chaining
@@ -105,8 +102,7 @@ public class Main {
 
         // 4.> Program is always going to start from the main function
 
-        // 5.> Here public signifience that this method could be accessed from any other
-        // package any other class or any file as well
+        // 5.> Here public signifience that this method could be accessed from any other package any other class or any file as well
 
         // ** */ System.out.println(args[0]); // To pass argument in to the main
         // function we could write it like :
@@ -118,8 +114,7 @@ public class Main {
 
         //Stack k changes persist nahi karte hai per heap k changes persist karte hai 
 
-        // Notes : Any data type which could not be broken into other data types are
-        // called premitive data type like( stack mai he refrence variable banta hai) :
+        // Notes : Any data type which could not be broken into other data types are called premitive data type like( stack mai he refrence variable banta hai) :
 
         // int rollos = 64;
         // char letter = 'r';
@@ -174,10 +169,10 @@ public class Main {
         // s1.name = kunal ; // Assianing it to another object is not allowed with final
         // keyword
 
-        // A obj;
-        // for (int i = 0; i < 1000000000; i++) {
-        //     obj = new A("Random name");
-        // }
+        A obj;
+        for (int i = 0; i < 1000000000; i++) {
+            obj = new A("Random name");
+        }
 
         
     }
